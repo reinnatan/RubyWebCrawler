@@ -17,7 +17,7 @@ doc.xpath("//*[contains(@class, 'entry learnable')]").each do |link|
 
   desc = link.element_children.xpath(descXPath)
   detail = link.element_children.xpath(detailXpath)
-  word = {"description"=>desc.text.strip, "detail"=>detail.text}
+  word = {"description"=>desc.text.delete(' '), "detail"=>detail.text}
 
   listWords.append(word)
   counter +=1
