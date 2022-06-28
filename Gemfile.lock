@@ -1,10 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    chronic (0.10.2)
     json (2.6.2)
     nokogiri (1.13.6-arm64-darwin)
       racc (~> 1.4)
     racc (1.6.0)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
 
 PLATFORMS
   arm64-darwin-21
@@ -12,6 +15,7 @@ PLATFORMS
 DEPENDENCIES
   json
   nokogiri
+  whenever
 
 BUNDLED WITH
    2.3.7

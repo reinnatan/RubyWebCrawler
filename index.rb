@@ -24,7 +24,7 @@ doc.xpath("//*[contains(@class, 'entry learnable')]").each do |link|
 end
 
 begin
-  file = File.open("output.json", "w")
+  file = File.open(Dir.pwd+"/output.json", "w")
   file.write(JSON.generate(listWords))
   file.close
 rescue IOError => e
