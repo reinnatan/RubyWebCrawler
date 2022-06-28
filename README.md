@@ -7,3 +7,4 @@ Simple Web Crawler Using Ruby, and get the output as json format which used ```o
 > could be see the refrence in https://github.com/javan/whenever
 > for refrence cronjob could be see in https://crontab.guru/#5_*_*_*_*
 > for given permission crontab, could see in this page, https://www.bejarano.io/fixing-cron-jobs-in-mojave/
+> for restart cronie service just running ```service cronie restart```
