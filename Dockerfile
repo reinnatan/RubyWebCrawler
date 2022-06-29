@@ -8,4 +8,5 @@ RUN rm -f /app/Gemfile.lock
 COPY index.rb Gemfile .
 COPY config ./config
 RUN bundle install
-CMD ["bundle exec whenever --update-crontab"]
+RUN bundle exec whenever --update-crontab
+#ENTRYPOINT ["bundle", "exec", "whenever", "--update-crontab"]
